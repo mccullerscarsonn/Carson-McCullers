@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carson McCullers | Book Discovery & Marketing Strategist</title>
+<meta name="description" content="Carson McCullers researches authors, books, catalogs, audiences and markets to uncover why books are being overlooked and what opportunities are worth pursuing. Research first. Strategy second.">
+<link rel="canonical" href="https://www.carsonmccullers.com/index.html">
+<meta property="og:title" content="Carson McCullers | Book Discovery & Marketing Strategist">
+<meta property="og:description" content="The person authors come to when they want to understand why their book isn't being discovered.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.carsonmccullers.com/index.html">
+<meta property="og:image" content="https://www.carsonmccullers.com/myname.png">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Carson McCullers — Book Discovery & Marketing Strategist",
+  "description": "Independent book discovery and marketing research practice working with published authors worldwide.",
+  "url": "https://www.carsonmccullers.com/",
+  "founder": { "@type": "Person", "name": "Carson McCullers", "jobTitle": "Book Discovery & Marketing Strategist", "image": "https://www.carsonmccullers.com/myname.png" }
+}
+</script>
+<style>
+:root{
+  --ivory:#F8F5EF; --ivory-deep:#F2ECDF; --paper:#FDFCF9;
+  --charcoal:#2A2420; --charcoal-soft:#5A5048;
+  --wine:#6D2330; --wine-deep:#4C1620;
+  --beige:#E9E0CC; --warm-gray:#8C8071; --line:#DDD1B8; --white:#FFFFFF;
+}
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--ivory);color:var(--charcoal);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+ul,ol{list-style:none;margin:0;padding:0;}
+button{font-family:inherit;background:none;border:none;cursor:pointer;color:inherit;}
+h1,h2,h3,h4,h5{font-family:Georgia,'Times New Roman',Times,serif;font-weight:400;margin:0 0 .5em;color:var(--charcoal);}
+h1{font-size:clamp(2.3rem,5vw,4.1rem);line-height:1.1;}
+h2{font-size:clamp(1.9rem,3.6vw,2.9rem);line-height:1.18;}
+h3{font-size:clamp(1.25rem,2vw,1.55rem);line-height:1.3;}
+p{margin:0 0 1.2em;}
+.container{max-width:1240px;margin:0 auto;padding:0 32px;}
+:focus-visible{outline:2px solid var(--wine);outline-offset:4px;}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important;}}
+
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--wine);font-weight:700;margin-bottom:18px;}
+.eyebrow::before{content:'';width:28px;height:1px;background:var(--wine);}
+.lede{font-size:1.12rem;color:var(--charcoal-soft);max-width:620px;}
+.section{padding:120px 0;}
+.section-alt{background:var(--ivory-deep);}
+.section-head{max-width:760px;margin-bottom:60px;}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+.divider{height:1px;background:var(--line);border:none;margin:0;}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:1000;background:rgba(248,245,239,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.header-inner{max-width:1360px;margin:0 auto;padding:20px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;}
+.logo{display:flex;flex-direction:column;line-height:1.15;}
+.logo-name{font-family:Georgia,serif;font-size:1.3rem;letter-spacing:.02em;}
+.logo-title{font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--warm-gray);margin-top:3px;}
+.main-nav ul{display:flex;gap:32px;}
+.main-nav a{font-size:.87rem;letter-spacing:.02em;position:relative;padding:6px 0;color:var(--charcoal-soft);transition:color .25s ease;}
+.main-nav a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--wine);transition:width .3s ease;}
+.main-nav a:hover{color:var(--charcoal);}
+.main-nav a:hover::after,.main-nav a.active::after{width:100%;}
+.main-nav a.active{color:var(--wine);}
+.header-actions{display:flex;align-items:center;gap:20px;}
+.btn{display:inline-block;padding:14px 30px;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--wine);transition:all .3s ease;}
+.btn-primary{background:var(--wine);color:var(--ivory);}
+.btn-primary:hover{background:var(--wine-deep);border-color:var(--wine-deep);}
+.btn-outline{background:transparent;border-color:var(--charcoal);color:var(--charcoal);}
+.btn-outline:hover{border-color:var(--wine);color:var(--wine);}
+.btn-ghost{border-color:transparent;padding:14px 0;color:var(--charcoal);position:relative;text-transform:none;letter-spacing:0;font-size:.95rem;}
+.btn-ghost::after{content:'→';margin-left:8px;transition:margin-left .3s ease;display:inline-block;}
+.btn-ghost:hover::after{margin-left:14px;}
+.menu-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:34px;height:34px;}
+.menu-toggle span{display:block;width:100%;height:1px;background:var(--charcoal);transition:transform .3s ease,opacity .3s ease;}
+.menu-toggle.active span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+.menu-toggle.active span:nth-child(2){opacity:0;}
+.menu-toggle.active span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+.mobile-menu{position:fixed;top:0;right:0;height:100vh;width:min(360px,86vw);background:var(--paper);box-shadow:-10px 0 40px rgba(0,0,0,.08);transform:translateX(100%);transition:transform .4s ease;z-index:1100;padding:100px 36px 40px;display:flex;flex-direction:column;justify-content:space-between;}
+.mobile-menu.open{transform:translateX(0);}
+.mobile-menu ul{display:flex;flex-direction:column;gap:4px;}
+.mobile-menu a{display:block;padding:14px 0;font-family:Georgia,serif;font-size:1.25rem;border-bottom:1px solid var(--line);}
+.mobile-cta{text-align:center;margin-top:30px;}
+.menu-overlay{position:fixed;inset:0;background:rgba(42,36,32,.4);opacity:0;pointer-events:none;transition:opacity .4s ease;z-index:1050;}
+.menu-overlay.open{opacity:1;pointer-events:auto;}
+
+/* Hero */
+.hero{padding:86px 0 110px;overflow:hidden;}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center;}
+.hero h1 em{font-style:italic;color:var(--wine);}
+.hero-actions{display:flex;gap:22px;margin-top:38px;flex-wrap:wrap;align-items:center;}
+.hero-stats{display:flex;gap:50px;margin-top:52px;padding-top:34px;border-top:1px solid var(--line);}
+.hero-stat-num{font-family:Georgia,serif;font-size:2.1rem;color:var(--wine);}
+.hero-stat-label{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--warm-gray);margin-top:4px;}
+
+/* Portrait */
+.portrait-frame{position:relative;aspect-ratio:4/5;background:linear-gradient(150deg,var(--beige),var(--ivory-deep));border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.portrait-frame::before{content:'';position:absolute;inset:16px;border:1px solid rgba(109,35,48,.25);z-index:2;pointer-events:none;}
+.portrait-img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;position:relative;z-index:1;}
+.portrait-fallback{display:none;position:absolute;inset:0;align-items:center;justify-content:center;text-align:center;padding:0 30px;z-index:1;}
+.portrait-label{font-family:Georgia,serif;font-style:italic;color:var(--warm-gray);font-size:.92rem;text-align:center;padding:0 30px;margin:0;}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease;}
+.reveal.in-view{opacity:1;transform:translateY(0);}
+.reveal-delay-1{transition-delay:.1s;} .reveal-delay-2{transition-delay:.2s;}
+.reveal-delay-3{transition-delay:.3s;} .reveal-delay-4{transition-delay:.4s;}
+
+/* Discovery Map */
+.discovery-map{position:relative;padding:40px 0;}
+.map-svg{width:100%;height:auto;}
+.map-node-circle{fill:var(--paper);stroke:var(--wine);stroke-width:1.2;}
+.map-node-label{font-family:Georgia,serif;font-size:13px;fill:var(--charcoal);}
+.map-node-sub{font-family:Arial,sans-serif;font-size:9px;fill:var(--warm-gray);letter-spacing:.05em;}
+.map-line{fill:none;stroke:var(--line);stroke-width:1;}
+.map-line.active-line{stroke:var(--wine);stroke-dasharray:480;stroke-dashoffset:480;transition:stroke-dashoffset 1.8s ease;}
+.discovery-map.in-view .map-line.active-line{stroke-dashoffset:0;}
+.map-node{opacity:0;transform:scale(.7);transition:opacity .5s ease,transform .5s ease;transform-origin:center;transform-box:fill-box;}
+.discovery-map.in-view .map-node{opacity:1;transform:scale(1);}
+.map-caption{text-align:center;font-family:Georgia,serif;font-style:italic;font-size:1.3rem;color:var(--charcoal-soft);margin-top:30px;}
+
+/* Timeline (method preview) */
+.method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:10px;}
+.method-cell{background:var(--paper);padding:40px 34px;transition:background .35s ease;}
+.method-cell:hover{background:var(--ivory-deep);}
+.method-num{font-family:Georgia,serif;color:var(--wine);font-size:1.3rem;display:block;margin-bottom:14px;}
+.method-cell p{color:var(--charcoal-soft);font-size:.92rem;margin-bottom:0;}
+
+/* Cards / grids */
+.grid{display:grid;gap:26px;}
+.grid-3{grid-template-columns:repeat(3,1fr);}
+.grid-4{grid-template-columns:repeat(4,1fr);}
+.card{background:var(--paper);border:1px solid var(--line);padding:34px 30px;transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease;}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(42,36,32,.08);border-color:var(--wine);}
+.card h3{margin-bottom:10px;}
+.card p{color:var(--charcoal-soft);font-size:.93rem;margin-bottom:0;}
+.chip-grid{display:flex;flex-wrap:wrap;gap:13px;}
+.chip{border:1px solid var(--line);padding:11px 19px;font-size:.84rem;color:var(--charcoal-soft);background:var(--paper);transition:border-color .3s ease,color .3s ease,transform .3s ease;}
+.chip:hover{border-color:var(--wine);color:var(--wine);transform:translateY(-3px);}
+
+/* Report mockup */
+.report-mock{background:var(--paper);border:1px solid var(--line);box-shadow:0 30px 70px rgba(42,36,32,.07);}
+.report-top{display:flex;align-items:center;justify-content:space-between;padding:20px 30px;border-bottom:1px solid var(--line);flex-wrap:wrap;gap:10px;}
+.report-tag{font-size:.63rem;letter-spacing:.12em;text-transform:uppercase;background:var(--beige);color:var(--charcoal-soft);padding:6px 12px;}
+.report-body{display:grid;grid-template-columns:190px 1fr;}
+.report-nav{border-right:1px solid var(--line);padding:20px 0;}
+.report-nav li{padding:12px 26px;font-size:.83rem;color:var(--charcoal-soft);border-left:2px solid transparent;}
+.report-nav li.active{color:var(--wine);border-left-color:var(--wine);background:var(--ivory-deep);}
+.report-content{padding:32px 34px;}
+.report-content h4{font-family:Georgia,serif;margin-bottom:10px;}
+.report-content p{color:var(--charcoal-soft);font-size:.93rem;}
+
+/* Statement block */
+.statement-block{max-width:820px;}
+.statement-block p{font-size:1.08rem;color:var(--charcoal-soft);}
+
+/* Footer */
+.site-footer{background:var(--charcoal);color:var(--ivory);padding:80px 0 30px;}
+.footer-inner{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:50px;padding-bottom:46px;border-bottom:1px solid rgba(248,245,239,.15);}
+.footer-name{font-family:Georgia,serif;font-size:1.35rem;}
+.footer-title{font-size:.8rem;color:rgba(248,245,239,.6);margin-top:6px;}
+.footer-tag{font-style:italic;color:rgba(248,245,239,.5);margin-top:20px;font-size:.9rem;}
+.footer-nav{display:flex;flex-direction:column;gap:12px;}
+.footer-nav a{color:rgba(248,245,239,.75);font-size:.9rem;transition:color .3s ease;}
+.footer-nav a:hover{color:var(--ivory);}
+.footer-meta p{font-size:.82rem;color:rgba(248,245,239,.5);margin-bottom:10px;}
+.footer-meta a{color:rgba(248,245,239,.75);}
+.footer-social{display:flex;gap:14px;margin-top:22px;}
+.footer-social a{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid rgba(248,245,239,.25);border-radius:50%;color:rgba(248,245,239,.8);transition:border-color .3s ease,color .3s ease,transform .3s ease,background .3s ease;}
+.footer-social a:hover{border-color:var(--wine);color:var(--ivory);background:var(--wine);transform:translateY(-3px);}
+.footer-social svg{width:17px;height:17px;}
+.footer-bottom{padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.78rem;color:rgba(248,245,239,.45);}
+
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;}
+  .hero-grid .portrait-frame{max-width:420px;}
+  .grid-3,.grid-4{grid-template-columns:repeat(2,1fr);}
+  .method-grid{grid-template-columns:1fr;}
+  .footer-inner{grid-template-columns:1fr 1fr;}
+  .report-body{grid-template-columns:1fr;}
+  .report-nav{display:flex;overflow-x:auto;border-right:none;border-bottom:1px solid var(--line);}
+  .report-nav li{white-space:nowrap;border-left:none;border-bottom:2px solid transparent;}
+  .report-nav li.active{border-bottom-color:var(--wine);}
+}
+@media(max-width:860px){
+  .main-nav,.header-cta{display:none;}
+  .menu-toggle{display:flex;}
+  .section{padding:84px 0;}
+}
+@media(max-width:620px){
+  .grid-3,.grid-4{grid-template-columns:1fr;}
+  .footer-inner{grid-template-columns:1fr;}
+  .hero-stats{flex-wrap:wrap;gap:28px;}
+  .container{padding:0 20px;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-name">Carson McCullers</span>
+      <span class="logo-title">Book Discovery &amp; Marketing Strategist</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="contact.html" class="btn btn-primary header-cta">Tell Me About Your Book</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="process.html">Process</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="insights.html">Insights</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="btn btn-primary mobile-cta">Tell Me About Your Book</a>
+</div>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="reveal in-view">
+        <span class="eyebrow">Book Discovery &amp; Marketing Strategist</span>
+        <h1>Your Book May Not Have a Marketing Problem.<br><em>It May Have a Discovery Problem.</em></h1>
+        <p class="lede">Carson McCullers researches books, authors, audiences and markets to uncover what may be getting overlooked and identify opportunities worth pursuing.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary">Tell Me About Your Book</a>
+          <a href="process.html" class="btn-ghost">Explore the Approach</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num"><span class="stat-counter" data-target="8" data-suffix="+">0</span></div>
+            <div class="hero-stat-label">Years of Experience</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">1:1</div>
+            <div class="hero-stat-label">Direct, Independent Practice</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">Global</div>
+            <div class="hero-stat-label">Authors Worldwide</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2 in-view">
+        <div class="portrait-frame">
+          <img
+            src="carson mcCullers.jpeg"
+            alt="Carson McCullers, Book Discovery and Marketing Strategist"
+            class="portrait-img"
+            loading="eager"
+            onerror="this.remove(); document.getElementById('portraitFallback').style.display='flex';"
+          >
+          <div class="portrait-fallback" id="portraitFallback">
+            <p class="portrait-label">Photograph of Carson McCullers<br>Add myname.png to this folder</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REAL PROBLEM -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Real Problem</span>
+        <h2>Being Published Is Not the Same as Being Discovered.</h2>
+        <p class="lede">Publishing a book places it in the marketplace. It does not automatically place it in front of the readers most likely to care about it.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card reveal">
+          <h3>Visibility Is Not Even</h3>
+          <p>A book can be live on every platform and still be functionally invisible to the readers who would respond to it most.</p>
+        </div>
+        <div class="card reveal reveal-delay-1">
+          <h3>Positioning Shapes Discovery</h3>
+          <p>How a book is categorized, described and compared determines whether the right readers ever encounter it in the first place.</p>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <h3>Effort Isn't Evidence</h3>
+          <p>Marketing activity and marketing results are not the same thing. What's been tried matters less than what it actually produced.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH FIRST -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+        <span class="eyebrow" style="justify-content:center;">Carson's Philosophy</span>
+        <h2>Research First. Strategy Second.</h2>
+        <p class="lede" style="margin:0 auto;">Before any recommendation, Carson maps the full picture, the author, the book, the catalog, the audience, the market and the current state of discovery.</p>
+      </div>
+
+      <div class="discovery-map reveal" id="discoveryMap">
+        <svg class="map-svg" viewBox="0 0 1100 320" role="img" aria-labelledby="mapTitle">
+          <title id="mapTitle">Diagram showing Carson's research categories connected to a central discovery question</title>
+          <!-- lines -->
+          <path class="map-line active-line" d="M150,70 L550,160" />
+          <path class="map-line active-line" d="M330,250 L550,160" />
+          <path class="map-line active-line" d="M550,40 L550,160" />
+          <path class="map-line active-line" d="M770,250 L550,160" />
+          <path class="map-line active-line" d="M950,70 L550,160" />
+          <path class="map-line active-line" d="M550,160 L550,260" />
+          <!-- outer nodes -->
+          <g class="map-node" style="transition-delay:.1s">
+            <circle class="map-node-circle" cx="150" cy="70" r="46"/>
+            <text class="map-node-label" x="150" y="66" text-anchor="middle">AUTHOR</text>
+            <text class="map-node-sub" x="150" y="82" text-anchor="middle">platform &amp; voice</text>
+          </g>
+          <g class="map-node" style="transition-delay:.2s">
+            <circle class="map-node-circle" cx="330" cy="250" r="46"/>
+            <text class="map-node-label" x="330" y="246" text-anchor="middle">BOOK</text>
+            <text class="map-node-sub" x="330" y="262" text-anchor="middle">positioning</text>
+          </g>
+          <g class="map-node" style="transition-delay:.3s">
+            <circle class="map-node-circle" cx="550" cy="40" r="46"/>
+            <text class="map-node-label" x="550" y="36" text-anchor="middle">CATALOG</text>
+            <text class="map-node-sub" x="550" y="52" text-anchor="middle">body of work</text>
+          </g>
+          <g class="map-node" style="transition-delay:.4s">
+            <circle class="map-node-circle" cx="770" cy="250" r="46"/>
+            <text class="map-node-label" x="770" y="246" text-anchor="middle">AUDIENCE</text>
+            <text class="map-node-sub" x="770" y="262" text-anchor="middle">real readers</text>
+          </g>
+          <g class="map-node" style="transition-delay:.5s">
+            <circle class="map-node-circle" cx="950" cy="70" r="46"/>
+            <text class="map-node-label" x="950" y="66" text-anchor="middle">MARKET</text>
+            <text class="map-node-sub" x="950" y="82" text-anchor="middle">comparables</text>
+          </g>
+          <!-- center node -->
+          <g class="map-node" style="transition-delay:.6s">
+            <circle class="map-node-circle" cx="550" cy="160" r="58" stroke-width="1.6" fill="#6D2330" opacity="1"/>
+            <text class="map-node-label" x="550" y="155" text-anchor="middle" fill="#F8F5EF" font-style="italic">DISCOVERY</text>
+            <text class="map-node-sub" x="550" y="172" text-anchor="middle" fill="#F2ECDF">what's overlooked</text>
+          </g>
+        </svg>
+        <p class="map-caption">What might be getting overlooked?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCOVERY METHOD PREVIEW -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Carson Discovery Method</span>
+        <h2>A Six-Stage Approach, Not a One-Time Fix.</h2>
+        <p class="lede">Every engagement follows the same disciplined sequence, because strategy that skips research is just a guess with better formatting.</p>
+      </div>
+      <div class="method-grid reveal reveal-delay-1">
+        <div class="method-cell"><span class="method-num">01 — Research</span><p>Understand the author, books, catalog, audience, platforms and existing visibility.</p></div>
+        <div class="method-cell"><span class="method-num">02 — Diagnose</span><p>Identify where discovery is working, where it may be breaking down, and what deserves closer attention.</p></div>
+        <div class="method-cell"><span class="method-num">03 — Discover</span><p>Find overlooked opportunities across readers, platforms, communities, positioning and the wider market.</p></div>
+        <div class="method-cell"><span class="method-num">04 — Strategize</span><p>Turn research into a practical strategy based on the author's actual situation.</p></div>
+        <div class="method-cell"><span class="method-num">05 — Execute</span><p>Put the chosen opportunities into action through the appropriate marketing channels.</p></div>
+        <div class="method-cell"><span class="method-num">06 — Measure</span><p>Review what happens, learn from the response, and refine the strategy.</p></div>
+      </div>
+      <div style="margin-top:40px;" class="reveal reveal-delay-2">
+        <a href="process.html" class="btn-ghost">See the full method</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT CARSON LOOKS AT -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">What Carson Looks At</span>
+        <h2>Research Points, Not Automatic Recommendations.</h2>
+        <p class="lede">These are areas Carson examines before suggesting anything. What gets prioritized depends entirely on what the research shows.</p>
+      </div>
+      <div class="chip-grid reveal reveal-delay-1">
+        <span class="chip">Amazon</span><span class="chip">Goodreads</span><span class="chip">Book Positioning</span>
+        <span class="chip">Keywords</span><span class="chip">Categories</span><span class="chip">Book Description</span>
+        <span class="chip">Reviews</span><span class="chip">Author Platform</span><span class="chip">Author Website</span>
+        <span class="chip">Social Presence</span><span class="chip">Catalog</span><span class="chip">Reader Communities</span>
+        <span class="chip">Comparable Books</span><span class="chip">Comparable Authors</span><span class="chip">Market Positioning</span>
+        <span class="chip">Email</span><span class="chip">BookTok</span><span class="chip">Content</span>
+        <span class="chip">Promotional Opportunities</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCOVERY REPORT -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="grid" style="grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+        <div class="reveal">
+          <span class="eyebrow">The Deliverable</span>
+          <h2>Before Recommendations, There Is Research.</h2>
+          <p class="lede">Authors can receive a structured research report showing exactly what Carson found, where the book is visible, where it is not, and where the opportunities sit.</p>
+          <a href="research.html" class="btn-ghost">See a sample audit</a>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="report-mock">
+            <div class="report-top">
+              <strong style="font-family:Georgia,serif;">Discovery Report</strong>
+              <span class="report-tag">Sample / Demonstration</span>
+            </div>
+            <div class="report-body">
+              <ul class="report-nav">
+                <li>Author</li>
+                <li class="active">Book</li>
+                <li>Catalog</li>
+                <li>Audience</li>
+                <li>Market</li>
+                <li>Discovery</li>
+                <li>Opportunities</li>
+              </ul>
+              <div class="report-content">
+                <h4>Book — Positioning Summary</h4>
+                <p>Current categories, keywords and description are reviewed against comparable titles to determine how the book is currently being found, misclassified, or missed entirely.</p>
+                <p style="font-size:.78rem;color:var(--warm-gray);">SAMPLE AUDIT. FOR DEMONSTRATION ONLY</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Services</span>
+        <h2>Tools Within a Larger Strategy.</h2>
+        <p class="lede">These are not a menu of automatic recommendations. The right combination depends on what the research reveals.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="card reveal"><h3>Discovery</h3><p>Amazon SEO, keywords, categories, description optimization, Goodreads strategy.</p></div>
+        <div class="card reveal reveal-delay-1"><h3>Research</h3><p>Author research, catalog audits, competitive research, audience and market analysis.</p></div>
+        <div class="card reveal reveal-delay-2"><h3>Positioning</h3><p>Book, author and catalog positioning. Website and social presence analysis.</p></div>
+        <div class="card reveal reveal-delay-3"><h3>Promotion</h3><p>Trailers, mockups, email, BookTok, content strategy, ARC and review strategy.</p></div>
+      </div>
+      <div style="margin-top:36px;" class="reveal reveal-delay-4">
+        <a href="services.html" class="btn-ghost">View all services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NO STANDARD PRICE -->
+  <section class="section section-alt">
+    <div class="container statement-block reveal">
+      <span class="eyebrow">On Pricing</span>
+      <h2>Marketing Problems Rarely Come in Standard Sizes.</h2>
+      <p>An author with one recently published book has a different situation from an author with twelve titles. A traditionally published historical novel may require a different strategy from an independently published nonfiction book.</p>
+      <p>Because of this, recommendations and investment are determined after understanding the specific situation, not before.</p>
+      <a href="contact.html" class="btn btn-outline">Tell Me About Your Book</a>
+    </div>
+  </section>
+
+  <!-- WHO CARSON WORKS WITH -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Who Carson Works With</span>
+        <h2>Published Authors, Worldwide.</h2>
+        <p class="lede">Across genres, publishing paths and career stages, the common thread is a published book in search of its readers.</p>
+      </div>
+      <div class="chip-grid reveal reveal-delay-1">
+        <span class="chip">Fiction</span><span class="chip">Nonfiction</span><span class="chip">Independent</span>
+        <span class="chip">Traditional</span><span class="chip">Small Press</span><span class="chip">Debut</span>
+        <span class="chip">Established</span><span class="chip">Memoir</span><span class="chip">Historical</span>
+        <span class="chip">Christian</span><span class="chip">Children's</span><span class="chip">Mystery</span>
+        <span class="chip">Thriller</span><span class="chip">Romance</span><span class="chip">Literary</span>
+        <span class="chip">Business</span><span class="chip">Educational</span><span class="chip">And more</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSIGHTS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Discovery Journal</span>
+        <h2>Recent Thinking on Discovery and Marketing.</h2>
+      </div>
+      <div class="grid grid-4">
+        <a href="insights.html" class="card reveal"><h3>Why Some Good Books Remain Invisible on Amazon</h3><p>Visibility and quality are not the same variable.</p></a>
+        <a href="insights.html" class="card reveal reveal-delay-1"><h3>What I Look for When Auditing an Author's Catalog</h3><p>The whole body of work changes the strategy.</p></a>
+        <a href="insights.html" class="card reveal reveal-delay-2"><h3>Your Book Has Reviews. But Are the Right Readers Finding It?</h3><p>Reviews and discovery solve different problems.</p></a>
+        <a href="insights.html" class="card reveal reveal-delay-3"><h3>Having a Book Online vs. Being Discoverable</h3><p>Availability is not the same as findability.</p></a>
+      </div>
+      <div style="margin-top:36px;" class="reveal reveal-delay-4">
+        <a href="insights.html" class="btn-ghost">Read the Discovery Journal</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section">
+    <div class="container" style="text-align:center;">
+      <div class="reveal" style="max-width:680px;margin:0 auto;">
+        <span class="eyebrow" style="justify-content:center;">Start Here</span>
+        <h2>Want Carson to Look at Your Book?</h2>
+        <p class="lede" style="margin:0 auto 32px;">Tell me what you've published, what you've tried, and what you're currently trying to improve. I'll review the information personally and respond by email if I see a meaningful opportunity to explore.</p>
+        <a href="contact.html" class="btn btn-primary">Tell Me About Your Book</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-name">Carson McCullers</p>
+        <p class="footer-title">Book Discovery &amp; Marketing Strategist</p>
+        <p class="footer-tag">Research first. Strategy second.</p>
+        <nav class="footer-social" aria-label="Social media">
+          <a href="https://www.instagram.com/mccullerscarsonn?stkn=ZjBjbTdvNWowYW9v" target="_blank" rel="noopener noreferrer" aria-label="Carson McCullers on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="https://vm.tiktok.com/ZS9DaCvCVdSBq-DzWye/" target="_blank" rel="noopener noreferrer" aria-label="Carson McCullers on TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M16.6 3h-3.1v12.2c0 1.6-1.3 2.9-2.9 2.9s-2.9-1.3-2.9-2.9 1.3-2.9 2.9-2.9c.3 0 .6 0 .9.1V9.2c-.3 0-.6-.1-.9-.1-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6V9.1c1.2.9 2.7 1.4 4.3 1.4V7.4c-2.3-.1-4.1-1.9-4.3-4.4z"/>
+            </svg>
+          </a>
+        </nav>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="process.html">Process</a>
+        <a href="research.html">Research</a>
+        <a href="insights.html">Insights</a>
+      </nav>
+      <div class="footer-meta">
+        <p><a href="faq.html">FAQ</a></p>
+        <p><a href="contact.html">Contact</a></p>
+        <p><a href="mailto:mccullerscarsonn@gmail.com">mccullerscarsonn@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Carson McCullers. All rights reserved.</p>
+      <p>Working with authors worldwide.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const menuToggle=document.getElementById('menuToggle');
+const mobileMenu=document.getElementById('mobileMenu');
+const menuOverlay=document.getElementById('menuOverlay');
+function closeMenu(){menuToggle.classList.remove('active');mobileMenu.classList.remove('open');menuOverlay.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');}
+function openMenu(){menuToggle.classList.add('active');mobileMenu.classList.add('open');menuOverlay.classList.add('open');menuToggle.setAttribute('aria-expanded','true');}
+menuToggle.addEventListener('click',()=>{menuToggle.classList.contains('active')?closeMenu():openMenu();});
+menuOverlay.addEventListener('click',closeMenu);
+mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+
+const revealEls=document.querySelectorAll('.reveal, .discovery-map');
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{ if(entry.isIntersecting){ entry.target.classList.add('in-view'); io.unobserve(entry.target);} });
+},{threshold:0.15});
+revealEls.forEach(el=>io.observe(el));
+
+const yearEl=document.getElementById('year'); if(yearEl) yearEl.textContent=new Date().getFullYear();
+
+function animateCounters(){
+  document.querySelectorAll('.stat-counter[data-target]').forEach(el=>{
+    const target=+el.getAttribute('data-target');
+    const duration=1200; const start=performance.now();
+    function step(now){
+      const progress=Math.min((now-start)/duration,1);
+      el.textContent=Math.floor(progress*target)+(el.getAttribute('data-suffix')||'');
+      if(progress<1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
+}
+if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  document.querySelectorAll('.stat-counter[data-target]').forEach(el=>{el.textContent=el.getAttribute('data-target')+(el.getAttribute('data-suffix')||'');});
+}else{ animateCounters(); }
+</script>
+</body>
+</html>

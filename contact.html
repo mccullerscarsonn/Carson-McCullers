@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Tell Carson McCullers About Your Book</title>
+<meta name="description" content="Tell Carson McCullers about your published book, what you've tried, and what you're currently trying to improve. Every inquiry is reviewed personally.">
+<link rel="canonical" href="https://www.carsonmccullers.com/contact.html">
+<meta property="og:title" content="Contact | Carson McCullers">
+<meta property="og:description" content="Tell me about your book. Every inquiry is reviewed personally.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.carsonmccullers.com/contact.html">
+<meta name="robots" content="index, follow">
+<style>
+:root{
+  --ivory:#F8F5EF; --ivory-deep:#F2ECDF; --paper:#FDFCF9;
+  --charcoal:#2A2420; --charcoal-soft:#5A5048;
+  --wine:#6D2330; --wine-deep:#4C1620;
+  --beige:#E9E0CC; --warm-gray:#8C8071; --line:#DDD1B8; --white:#FFFFFF;
+}
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--ivory);color:var(--charcoal);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+img{max-width:100%;display:block;} a{color:inherit;text-decoration:none;}
+ul,ol{list-style:none;margin:0;padding:0;} button{font-family:inherit;background:none;border:none;cursor:pointer;color:inherit;}
+h1,h2,h3{font-family:Georgia,'Times New Roman',Times,serif;font-weight:400;margin:0 0 .5em;color:var(--charcoal);}
+h1{font-size:clamp(2.1rem,4.4vw,3.3rem);line-height:1.15;}
+p{margin:0 0 1.2em;}
+.container{max-width:1000px;margin:0 auto;padding:0 32px;}
+:focus-visible{outline:2px solid var(--wine);outline-offset:4px;}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important;}}
+
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--wine);font-weight:700;margin-bottom:18px;}
+.eyebrow::before{content:'';width:28px;height:1px;background:var(--wine);}
+.lede{font-size:1.1rem;color:var(--charcoal-soft);max-width:600px;}
+.section{padding:90px 0 120px;}
+
+.site-header{position:sticky;top:0;z-index:1000;background:rgba(248,245,239,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.header-inner{max-width:1360px;margin:0 auto;padding:20px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;}
+.logo{display:flex;flex-direction:column;line-height:1.15;}
+.logo-name{font-family:Georgia,serif;font-size:1.3rem;letter-spacing:.02em;}
+.logo-title{font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--warm-gray);margin-top:3px;}
+.main-nav ul{display:flex;gap:32px;}
+.main-nav a{font-size:.87rem;position:relative;padding:6px 0;color:var(--charcoal-soft);transition:color .25s ease;}
+.main-nav a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--wine);transition:width .3s ease;}
+.main-nav a:hover{color:var(--charcoal);}
+.main-nav a:hover::after,.main-nav a.active::after{width:100%;}
+.main-nav a.active{color:var(--wine);}
+.header-actions{display:flex;align-items:center;gap:20px;}
+.btn{display:inline-block;padding:14px 30px;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--wine);transition:all .3s ease;}
+.btn-primary{background:var(--wine);color:var(--ivory);}
+.btn-primary:hover{background:var(--wine-deep);border-color:var(--wine-deep);}
+.btn-primary:disabled{opacity:.6;cursor:not-allowed;}
+.menu-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:34px;height:34px;}
+.menu-toggle span{display:block;width:100%;height:1px;background:var(--charcoal);transition:transform .3s ease,opacity .3s ease;}
+.menu-toggle.active span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+.menu-toggle.active span:nth-child(2){opacity:0;}
+.menu-toggle.active span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+.mobile-menu{position:fixed;top:0;right:0;height:100vh;width:min(360px,86vw);background:var(--paper);box-shadow:-10px 0 40px rgba(0,0,0,.08);transform:translateX(100%);transition:transform .4s ease;z-index:1100;padding:100px 36px 40px;display:flex;flex-direction:column;justify-content:space-between;}
+.mobile-menu.open{transform:translateX(0);}
+.mobile-menu ul{display:flex;flex-direction:column;gap:4px;}
+.mobile-menu a{display:block;padding:14px 0;font-family:Georgia,serif;font-size:1.25rem;border-bottom:1px solid var(--line);}
+.mobile-cta{text-align:center;margin-top:30px;}
+.menu-overlay{position:fixed;inset:0;background:rgba(42,36,32,.4);opacity:0;pointer-events:none;transition:opacity .4s ease;z-index:1050;}
+.menu-overlay.open{opacity:1;pointer-events:auto;}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.in-view{opacity:1;transform:translateY(0);}
+
+.direct-email{display:inline-flex;align-items:center;gap:10px;margin-top:18px;padding:12px 20px;border:1px solid var(--line);background:var(--paper);font-size:.92rem;color:var(--charcoal-soft);transition:border-color .3s ease,color .3s ease;flex-wrap:wrap;}
+.direct-email a{color:var(--wine);font-weight:600;}
+.direct-email:hover{border-color:var(--wine);}
+
+.form-wrap{background:var(--paper);border:1px solid var(--line);padding:50px;margin-top:50px;box-shadow:0 30px 70px rgba(42,36,32,.06);}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+.form-field{display:flex;flex-direction:column;gap:8px;}
+.form-field.full{grid-column:1/-1;}
+label{font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--charcoal-soft);}
+input,select,textarea{border:1px solid var(--line);background:var(--ivory);padding:14px 16px;font-family:Arial,Helvetica,sans-serif;font-size:.95rem;color:var(--charcoal);transition:border-color .3s ease;width:100%;}
+input:focus,select:focus,textarea:focus{border-color:var(--wine);outline:none;}
+textarea{resize:vertical;min-height:110px;}
+.checkbox-grid{display:flex;flex-wrap:wrap;gap:12px;}
+.checkbox-chip{position:relative;}
+.checkbox-chip input{position:absolute;opacity:0;width:1px;height:1px;}
+.checkbox-chip label{display:inline-block;border:1px solid var(--line);padding:10px 18px;font-size:.84rem;text-transform:none;letter-spacing:0;cursor:pointer;transition:all .25s ease;background:var(--ivory);}
+.checkbox-chip input:focus-visible + label{outline:2px solid var(--wine);outline-offset:2px;}
+.checkbox-chip input:checked + label{border-color:var(--wine);background:var(--wine);color:var(--ivory);}
+.submit-row{margin-top:10px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.form-note{font-size:.88rem;color:var(--charcoal-soft);margin-top:26px;max-width:600px;}
+.form-error{display:none;font-size:.88rem;color:var(--wine);margin-top:16px;}
+.form-success{display:none;text-align:center;padding:60px 20px;}
+.form-success h2{margin-bottom:14px;}
+.hp-field{position:absolute;left:-9999px;top:-9999px;}
+
+.site-footer{background:var(--charcoal);color:var(--ivory);padding:80px 0 30px;}
+.footer-inner{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:50px;padding-bottom:46px;border-bottom:1px solid rgba(248,245,239,.15);max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px;}
+.footer-name{font-family:Georgia,serif;font-size:1.35rem;}
+.footer-title{font-size:.8rem;color:rgba(248,245,239,.6);margin-top:6px;}
+.footer-tag{font-style:italic;color:rgba(248,245,239,.5);margin-top:20px;font-size:.9rem;}
+.footer-nav{display:flex;flex-direction:column;gap:12px;}
+.footer-nav a{color:rgba(248,245,239,.75);font-size:.9rem;transition:color .3s ease;}
+.footer-nav a:hover{color:var(--ivory);}
+.footer-meta p{font-size:.82rem;color:rgba(248,245,239,.5);margin-bottom:10px;}
+.footer-meta a{color:rgba(248,245,239,.75);}
+.footer-social{display:flex;gap:14px;margin-top:22px;}
+.footer-social a{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid rgba(248,245,239,.25);border-radius:50%;color:rgba(248,245,239,.8);transition:border-color .3s ease,color .3s ease,transform .3s ease,background .3s ease;}
+.footer-social a:hover{border-color:var(--wine);color:var(--ivory);background:var(--wine);transform:translateY(-3px);}
+.footer-social svg{width:17px;height:17px;}
+.footer-bottom{max-width:1240px;margin:0 auto;padding:26px 32px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.78rem;color:rgba(248,245,239,.45);}
+
+@media(max-width:1024px){.footer-inner{grid-template-columns:1fr 1fr;}}
+@media(max-width:860px){.main-nav,.header-cta{display:none;} .menu-toggle{display:flex;}}
+@media(max-width:620px){
+  .form-grid{grid-template-columns:1fr;} .form-wrap{padding:30px 22px;}
+  .footer-inner{grid-template-columns:1fr;} .container{padding:0 20px;}
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="logo-name">Carson McCullers</span><span class="logo-title">Book Discovery &amp; Marketing Strategist</span></a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="process.html">Process</a></li>
+      <li><a href="research.html">Research</a></li><li><a href="insights.html">Insights</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html" class="active">Contact</a></li></ul>
+    </nav>
+    <div class="header-actions">
+      <a href="contact.html" class="btn btn-primary header-cta">Tell Me About Your Book</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li>
+  <li><a href="process.html">Process</a></li><li><a href="research.html">Research</a></li><li><a href="insights.html">Insights</a></li>
+  <li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul>
+  <a href="contact.html" class="btn btn-primary mobile-cta">Tell Me About Your Book</a>
+</div>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="reveal in-view">
+        <span class="eyebrow">Contact</span>
+        <h1>Tell Me About Your Book.</h1>
+        <p class="lede">Share what you've published, what you've tried, and what you're currently trying to improve. Carson reviews every submission personally.</p>
+        <div class="direct-email">
+          Prefer email? Reach Carson directly at <a href="mailto:mccullerscarsonn@gmail.com">mccullerscarsonn@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="form-wrap reveal">
+        <form id="contactForm" action="https://formspree.io/f/xrpegrzp" method="POST">
+          <input type="hidden" name="_subject" value="New Book Submission from Carson McCullers Website">
+          <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div class="form-field">
+              <label for="bookTitle">Book Title</label>
+              <input type="text" id="bookTitle" name="bookTitle" required>
+            </div>
+            <div class="form-field">
+              <label for="bookLink">Book Link</label>
+              <input type="url" id="bookLink" name="bookLink" placeholder="https://">
+            </div>
+            <div class="form-field">
+              <label for="authorWebsite">Author Website</label>
+              <input type="url" id="authorWebsite" name="authorWebsite" placeholder="https://">
+            </div>
+            <div class="form-field">
+              <label for="genre">Genre</label>
+              <input type="text" id="genre" name="genre" placeholder="e.g. Literary Fiction, Memoir, Thriller">
+            </div>
+            <div class="form-field">
+              <label for="publishingType">Publishing Type</label>
+              <select id="publishingType" name="publishingType">
+                <option value="">Select one</option>
+                <option>Traditionally Published</option>
+                <option>Independently Published</option>
+                <option>Self-Published</option>
+                <option>Small Press</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-field full">
+              <label>What Are You Currently Trying to Improve?</label>
+              <div class="checkbox-grid">
+                <div class="checkbox-chip"><input type="checkbox" id="opt1" name="improve" value="Book discovery"><label for="opt1">Book discovery</label></div>
+                <div class="checkbox-chip"><input type="checkbox" id="opt2" name="improve" value="Amazon visibility"><label for="opt2">Amazon visibility</label></div>
+                <div class="checkbox-chip"><input type="checkbox" id="opt3" name="improve" value="Reader reach"><label for="opt3">Reader reach</label></div>
+                <div class="checkbox-chip"><input type="checkbox" id="opt4" name="improve" value="Reviews"><label for="opt4">Reviews</label></div>
+                <div class="checkbox-chip"><input type="checkbox" id="opt5" name="improve" value="Marketing strategy"><label for="opt5">Marketing strategy</label></div>
+                <div class="checkbox-chip"><input type="checkbox" id="opt6" name="improve" value="Website presence"><label for="opt6">Website presence</label></div>
+                <div class="checkbox-chip"><input type="checkbox" id="opt7" name="improve" value="Social media"><label for="opt7">Social media</label></div>
+                <div class="checkbox-chip"><input type="checkbox" id="opt8" name="improve" value="Catalog strategy"><label for="opt8">Catalog strategy</label></div>
+                <div class="checkbox-chip"><input type="checkbox" id="opt9" name="improve" value="Other"><label for="opt9">Other</label></div>
+              </div>
+            </div>
+            <div class="form-field full">
+              <label for="tried">What Have You Already Tried?</label>
+              <textarea id="tried" name="tried" placeholder="Describe any marketing activities, platforms, or strategies you've already attempted."></textarea>
+            </div>
+            <div class="form-field full">
+              <label for="additional">Additional Information</label>
+              <textarea id="additional" name="additional" placeholder="Anything else that would help Carson understand your situation."></textarea>
+            </div>
+          </div>
+          <div class="submit-row">
+            <button type="submit" class="btn btn-primary" id="submitBtn">Submit Your Book</button>
+          </div>
+          <p class="form-error" id="formError">Something went wrong sending your message. Please try again, or email directly at <a href="mailto:mccullerscarsonn@gmail.com">mccullerscarsonn@gmail.com</a>.</p>
+          <p class="form-note">Every inquiry is reviewed personally. If I see a meaningful opportunity to explore, Carson will respond by email. You can also reach out directly at <a href="mailto:mccullerscarsonn@gmail.com">mccullerscarsonn@gmail.com</a>.</p>
+        </form>
+
+        <div class="form-success" id="formSuccess" tabindex="-1">
+          <h2>Thank You.</h2>
+          <p class="lede" style="margin:0 auto;">Your information has been received. Carson reviews every submission personally and will respond by email if there's a meaningful opportunity to explore.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-name">Carson McCullers</p>
+      <p class="footer-title">Book Discovery &amp; Marketing Strategist</p>
+      <p class="footer-tag">Research first. Strategy second.</p>
+      <nav class="footer-social" aria-label="Social media">
+        <a href="https://www.instagram.com/mccullerscarsonn?stkn=ZjBjbTdvNWowYW9v" target="_blank" rel="noopener noreferrer" aria-label="Carson McCullers on Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="https://vm.tiktok.com/ZS9DaCvCVdSBq-DzWye/" target="_blank" rel="noopener noreferrer" aria-label="Carson McCullers on TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M16.6 3h-3.1v12.2c0 1.6-1.3 2.9-2.9 2.9s-2.9-1.3-2.9-2.9 1.3-2.9 2.9-2.9c.3 0 .6 0 .9.1V9.2c-.3 0-.6-.1-.9-.1-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6V9.1c1.2.9 2.7 1.4 4.3 1.4V7.4c-2.3-.1-4.1-1.9-4.3-4.4z"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+    <nav class="footer-nav" aria-label="Footer"><a href="about.html">About</a><a href="services.html">Services</a><a href="process.html">Process</a><a href="research.html">Research</a><a href="insights.html">Insights</a></nav>
+    <div class="footer-meta">
+      <p><a href="faq.html">FAQ</a></p>
+      <p><a href="contact.html">Contact</a></p>
+      <p><a href="mailto:mccullerscarsonn@gmail.com">mccullerscarsonn@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>&copy; <span id="year"></span> Carson McCullers. All rights reserved.</p><p>Working with authors worldwide.</p></div>
+</footer>
+
+<script>
+const menuToggle=document.getElementById('menuToggle'), mobileMenu=document.getElementById('mobileMenu'), menuOverlay=document.getElementById('menuOverlay');
+function closeMenu(){menuToggle.classList.remove('active');mobileMenu.classList.remove('open');menuOverlay.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');}
+function openMenu(){menuToggle.classList.add('active');mobileMenu.classList.add('open');menuOverlay.classList.add('open');menuToggle.setAttribute('aria-expanded','true');}
+menuToggle.addEventListener('click',()=>{menuToggle.classList.contains('active')?closeMenu():openMenu();});
+menuOverlay.addEventListener('click',closeMenu);
+mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in-view');io.unobserve(e.target);}});},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+const form=document.getElementById('contactForm');
+const formSuccess=document.getElementById('formSuccess');
+const formError=document.getElementById('formError');
+const submitBtn=document.getElementById('submitBtn');
+
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  if(!form.checkValidity()){ form.reportValidity(); return; }
+
+  formError.style.display='none';
+  submitBtn.disabled=true;
+  submitBtn.textContent='Sending...';
+
+  const formData=new FormData(form);
+
+  fetch(form.action, {
+    method:'POST',
+    body:formData,
+    headers:{ 'Accept':'application/json' }
+  }).then(response=>{
+    if(response.ok){
+      form.style.display='none';
+      formSuccess.style.display='block';
+      formSuccess.focus();
+    } else {
+      throw new Error('Form submission failed');
+    }
+  }).catch(()=>{
+    formError.style.display='block';
+    submitBtn.disabled=false;
+    submitBtn.textContent='Submit Your Book';
+  });
+});
+
+const yearEl=document.getElementById('year'); if(yearEl) yearEl.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
